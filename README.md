@@ -1,15 +1,25 @@
 # cloud_opss
-Case CloudOpss
+* 1° Instalar o python 2.7 ou superior
+* 2° Importar as Libs  
 
-* Importação das libs  
-~~~python
-# imports das libs que iremos utlizar
+Nesse caso vamos utlizar: 
+---
 
-from flask import Flask, request, jsonify
-from flask_restful import Resource, Api
-from sqlalchemy import create_engine
-from json import dumps
+  * Flask
+  * Flask-SQLAlchemy
+  * Flask-Restful
+  * Jsonify 
+
+Para baixar essas libs basta executar no terminal o seguinte comando:
+
 ~~~
+   $  pip install flask flask-jsonpify flask-sqlalchemy flask-restful
+~~~
+
+* 3° Utilize SQLITE
+* Segue link para acessar o BD - [BAIXAR](https://github.com/robson17/cloud_opss/blob/main/case_cloudopss.db)
+
+O nome do arquivo de banco de dados é case_cloudopss.db que ficará na raiz do seu projeto.
 
 * Recuperar o arquivo de banco e utilizar o flask
 db_connect = create_engine('sqlite:///case_cloudopss.db')
