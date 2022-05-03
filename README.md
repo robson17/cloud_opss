@@ -1,9 +1,9 @@
-# cloud_opss
+# Case cloud_opss
 * 1° Instalar o python 2.7 ou superior
-* 2° Importar as Libs  
+* 2° Importar as Libs:
 
 Nesse caso vamos utlizar: 
----
+
 
   * Flask
   * Flask-SQLAlchemy
@@ -19,12 +19,14 @@ Para baixar essas libs basta executar no terminal o seguinte comando:
 * 3° Utilize SQLITE
 * Segue link para acessar o BD - [BAIXAR](https://github.com/robson17/cloud_opss/blob/main/case_cloudopss.db)
 
-O nome do arquivo de banco de dados é case_cloudopss.db que ficará na raiz do seu projeto.
+O nome do arquivo de banco de dados é case_cloudopss.db que deve ficar na raiz do seu projeto.
 
-* Recuperar o arquivo de banco e utilizar o flask
+* Recuperar o arquivo de banco e utilizar o flask:
+
 db_connect = create_engine('sqlite:///case_cloudopss.db')
 app = Flask(__name__)
 api = Api(app)
+
 
 * Criar os endpoints de User, GET, POST E PUT
 
